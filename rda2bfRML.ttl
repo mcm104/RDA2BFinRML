@@ -8,7 +8,6 @@
 @prefix ns2: <http://rdaregistry.info/Elements/w/>.
 
 #has identifier for work (RDA 6.8)
-#test
 
 <#identifiedByMapping>
   a rr:TriplesMap ;
