@@ -7,8 +7,7 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
 @prefix ns2: <http://rdaregistry.info/Elements/w/>.
 
-<#categoryOfWorkMapping>
-  a rr:TriplesMap ;
+ex:CategoryOfWorkMapping a rr:TriplesMap ;
 
   rr:logicalSource [
     rml:source "https://raw.githubusercontent.com/mcm104/RDA2BFinRML/master/Sinopia%20data%20in%20JSON-LD/0a4ea663-988e-474b-a25e-659b935b65a9" ;
@@ -24,12 +23,11 @@
   rr:predicateObjectMap [
     rr:predicate bf:genreForm ;
     rr:objectMap [
-      rr:parentTriplesMap "#genreFormMapping"
+      rr:parentTriplesMap ex:GenreFormMapping
     ]
   ] .
 
-<#genreFormMapping>
-  a rr:TriplesMap ;
+ex:GenreFormMapping a rr:TriplesMap ;
 
   rr:logicalSource [
     rml:source "https://raw.githubusercontent.com/mcm104/RDA2BFinRML/master/Sinopia%20data%20in%20JSON-LD/0a4ea663-988e-474b-a25e-659b935b65a9" ;
