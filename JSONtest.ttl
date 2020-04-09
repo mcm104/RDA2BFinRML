@@ -1,0 +1,50 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ex: <http://example.com/ns#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ns2: <http://rdaregistry.info/Elements/w/>.
+
+<#categoryOfWorkMapping>
+  a rr:TriplesMap ;
+
+  rr:logicalSource [
+    rml:source "https://raw.githubusercontent.com/mcm104/RDA2BFinRML/master/Sinopia%20data%20in%20JSON-LD/0a4ea663-988e-474b-a25e-659b935b65a9" ;
+    rml:referenceFormulation ql:JSONPath ;
+    rml:iterator "$"
+  ] ;
+
+  rr:subjectMap [
+    rml:constant "https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9" ;
+    rr:class bf:Work
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate bf:genreForm ;
+    rr:objectMap [
+      rr:parentTriplesMap "#genreFormMapping"
+    ]
+  ] .
+
+<#genreFormMapping>
+  a rr:TriplesMap ;
+
+  rr:logicalSource [
+    rml:source "https://raw.githubusercontent.com/mcm104/RDA2BFinRML/master/Sinopia%20data%20in%20JSON-LD/0a4ea663-988e-474b-a25e-659b935b65a9" ;
+    rml:referenceFormulation ql:JSONPath ;
+    rml:iterator "$"
+  ] ;
+
+  rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:GenreForm
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rr:reference "$.@graph.@P10004"
+    ]
+  ] .
