@@ -1,0 +1,28 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/example.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/rdf:RDF/rdf:Description"
+  ].
+
+:TriplesMap rr:subjectMap [
+  rml:reference "@rdf:about";
+  rr:class bf:Title
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate ns2:P10223;
+  rr:objectMap [
+    rml:reference "ns2:P10223"
+  ]
+].

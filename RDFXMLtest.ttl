@@ -1,0 +1,45 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ex: <http://example.com/ns#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ns2: <http://rdaregistry.info/Elements/w/>.
+
+ex:TriplesMap a rr:TriplesMap;
+  rr:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/examplesRDFXML/1a09069d-8165-42ae-bfc0-f6b269b4d34b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/rdf:Description/ns2:P10004"
+  ].
+
+ex:CategoryOfWorkMapping rr:subjectMap [
+    rml:constant "https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9";
+    rr:class bf:Work
+  ].
+
+ex:CategoryOfWorkMapping rr:predicateObjectMap [
+    rr:predicate bf:genreForm;
+    rr:objectMap [
+      rr:parentTriplesMap ex:GenreFormMapping
+    ]
+  ].
+
+ex:GenreFormMapping a rr:TriplesMap;
+  rr:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/examplesRDFXML/1a09069d-8165-42ae-bfc0-f6b269b4d34b.xml";
+    rml:referenceFormulation ql:XPath
+  ].
+
+ex:GenreFormMapping rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:GenreForm
+  ].
+
+ex:GenreFormMapping rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rr:reference "rdf:Description/ns2:P10004@rdf:resource"
+    ]
+  ].
