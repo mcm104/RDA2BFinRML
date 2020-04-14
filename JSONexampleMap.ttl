@@ -1,0 +1,47 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+
+ex:TitleMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/JSONexampleData.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$"
+  ].
+
+ex:TitleMap rr:subjectMap [
+  rml:reference "@work.@trellis";
+  rr:class bf:Work
+].
+
+ex:TitleMap rr:predicateObjectMap [
+  rr:predicate ns2:P10223;
+  rr:objectMap [
+    rr:parentTriplesMap ex:LabelMap
+  ]
+].
+
+ex:LabelMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/JSONexampleData.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$"
+  ].
+
+ex:LabelMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Title
+  ].
+
+ex:LabelMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "@work.@title"
+  ]
+] .

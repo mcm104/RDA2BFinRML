@@ -12,17 +12,17 @@
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/example.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/rdf:RDF/rdf:Description"
+    rml:iterator "/RDF/Description"
   ].
 
 :TriplesMap rr:subjectMap [
-  rml:reference "@rdf:about";
+  rml:reference "@about";
   rr:class bf:Title
 ].
 
 :TriplesMap rr:predicateObjectMap [
   rr:predicate ns2:P10223;
   rr:objectMap [
-    rml:reference "ns2:P10223"
+    rml:reference "P10223"
   ]
 ].
