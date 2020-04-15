@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<RDF
-   xmlns:ns2="http://rdaregistry.info/Elements/w/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
->
+<RDF>
 
   <Description about="https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b">
-    <P10223 xml:lang="en">Beyond Einstein</P10223>
+    <P10223 lang="en">Beyond Einstein</P10223>
   </Description>
 
 </RDF>
