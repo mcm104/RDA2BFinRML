@@ -21,26 +21,33 @@ ex:TitleMap rr:subjectMap [
 ].
 
 ex:TitleMap rr:predicateObjectMap [
-  rr:predicate ns2:P10223;
+  rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:LabelMap
+    rr:parentTriplesMap ex:TitleBNodeMap
   ]
 ].
 
-ex:LabelMap a rr:TriplesMap;
+ex:TitleBNodeMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/JSONexampleData.json";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/JSON/titleExampleData.json";
     rml:referenceFormulation ql:JSONPath;
     rml:iterator "$"
   ].
 
-ex:LabelMap rr:subjectMap [
+ex:TitleBNodeMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Title
   ].
 
-ex:LabelMap rr:predicateObjectMap [
+ex:TitleBNodeMap rr:predicateObjectMap [
   rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "@work.@title"
+  ]
+] .
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle ;
   rr:objectMap [
     rml:reference "@work.@title"
   ]
