@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RDF>
-  <Description aboutURI="https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b">
+  <Description1 about="https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b">
     <P10223 lang="en">Beyond Einstein</P10223>
     <P10256>General relativity (Physics)--History--20th century--Congresses</P10256>
     <hasLcClassificationPartA lang="en">QC173.52</hasLcClassificationPartA>
@@ -19,11 +19,11 @@
     <P10256>Relativity (Physics)--History--20th century--Congresses</P10256>
     <P10331 lang="en">Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein</P10331>
     <hasResourceTemplate>WAU:RT:RDA:Work:monograph</hasResourceTemplate>
-  </Description>
-  <Description about2="https://id.loc.gov/vocabulary/menclvl/f">
+  </Description1>
+  <Description2 about="https://id.loc.gov/vocabulary/menclvl/f">
     <label>full</label>
-  </Description>
-  <Description nodeID="f4671bbbbb1844474b46dedab4183d2a3b1">
+  </Description2>
+  <Description3 nodeID="f4671bbbbb1844474b46dedab4183d2a3b1">
     <source resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <encodingLevel resource="https://id.loc.gov/vocabulary/menclvl/f"/>
     <creationDate lang="en">2019-11-19</creationDate>
@@ -32,21 +32,21 @@
     <descriptionConventions resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <status nodeID="f4671bbbbb1844474b46dedab4183d2a3b2"/>
     <descriptionLanguage resource="https://id.loc.gov/vocabulary/languages/eng"/>
-  </Description>
-  <Description about3="https://id.loc.gov/vocabulary/organizations/wau">
+  </Description3>
+  <Description4 about="https://id.loc.gov/vocabulary/organizations/wau">
     <label>WAU</label>
-  </Description>
-  <Description about4="http://id.loc.gov/authorities/genreForms/gf2014026068">
+  </Description4>
+  <Description5 about="http://id.loc.gov/authorities/genreForms/gf2014026068">
     <label>Conference papers and proceedings</label>
-  </Description>
-  <Description nodeID="f4671bbbbb1844474b46dedab4183d2a3b2">
+  </Description5>
+  <Description6 nodeID="f4671bbbbb1844474b46dedab4183d2a3b2">
     <type resource="http://id.loc.gov/ontologies/bibframe/Status"/>
     <code lang="en">n</code>
-  </Description>
-  <Description about5="https://id.loc.gov/vocabulary/languages/eng">
+  </Description6>
+  <Description7 about="https://id.loc.gov/vocabulary/languages/eng">
     <label>English</label>
-  </Description>
-  <Description about6="https://id.loc.gov/vocabulary/descriptionConventions/rda">
+  </Description7>
+  <Description8 about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <label>Resource Description and Access</label>
-  </Description>
+  </Description8>
 </RDF>

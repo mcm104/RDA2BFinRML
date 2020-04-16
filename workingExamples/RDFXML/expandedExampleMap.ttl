@@ -2,6 +2,7 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ex: <http://example.org/rules/> .
 @prefix schema: <http://schema.org/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
@@ -11,17 +12,17 @@
 @prefix ns4: <http://sinopia.io/vocabulary/> .
 @prefix ns5: <http://rdaregistry.info/Elements/m/datatype/> .
 @prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 
 ex:TitleMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description"
+    rml:iterator "/RDF/Description1"
   ].
 
 ex:TitleMap rr:subjectMap [
-  rml:reference "@aboutURI";
+  rml:reference "@about";
   rr:class bf:Work
 ].
 
@@ -36,23 +37,242 @@ ex:TitleBNodeMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description"
+    rml:iterator "/RDF/Description1"
   ].
 
 ex:TitleBNodeMap rr:subjectMap [
-    rr:termType rr:BlankNode
+  rr:termType rr:BlankNode;
+  rr:class bf:Title
+].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "P10223"
+  ]
+].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle;
+  rr:objectMap [
+    rml:reference "P10223"
+  ]
+].
+
+ex:TitleBNodeMap rr:predicate [
+  rr:predicate bf:hasPart;
+  rr:objectMap [
+    rml:reference "P10147"
+  ]
+].
+
+ex:CategoryOfWorkMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
   ].
 
-ex:TitleBNodeMap rr:predicateObjectMap [
-  rr:predicate rdfs:label ;
-  rr:objectMap [
-    rml:reference "P10223"
-  ]
-] .
+ex:CategoryOfWorkMap rr:subjectMap [
+  rml:reference "@about";
+  rr:class bf:Work
+].
 
-ex:TitleBNodeMap rr:predicateObjectMap [
-  rr:predicate bf:mainTitle ;
+ex:CategoryOfWorkMap rr:predicateObjectMap [
+  rr:predicate bf:genreForm;
   rr:objectMap [
-    rml:reference "P10223"
+    rml:reference "P10004/@resource"
   ]
-] .
+].
+
+ex:CategoryOfWorkBNodeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description5"
+  ].
+
+  ex:CategoryOfWorkBNodeMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:GenreForm
+  ].
+
+  ex:CategoryOfWorkBNodeMap rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rml:reference "label"
+    ]
+  ].
+
+ex:DateOfWorkMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+  ex:DateOfWorkMapping rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Work
+  ].
+
+  ex:DateOfWorkMapping rr:predicateObjectMap [
+    rr:predicate bf:originDate ;
+    rr:objectMap [
+      rml:reference "P10219"
+    ]
+  ].
+
+ex:PlaceOfOriginMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+ex:PlaceOfOriginMapping rr:subjectMap [
+  rml:reference "@about";
+  rr:class bf:Work
+].
+
+ex:PlaceOfOriginMapping rr:predicateObjectMap [
+    rr:predicate bf:originPlace ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PlaceOfOriginBNodeMapping
+    ]
+  ] .
+
+ex:PlaceOfOriginBNodeMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+ex:PlaceOfOriginBNodeMapping rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Place
+  ] .
+
+ex:PlaceOfOriginBNodeMapping rr:predicateObjectMap [
+    rr:predicate bf:source ;
+    rr:objectMap [
+      rr:reference "P10218/@resource"
+    ]
+  ] .
+
+ex:PlaceOfOriginBNodeMapping rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rr:reference "P10218"
+    ]
+  ] .
+
+ex:IdentifiedByMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+  ex:IdentifiedByMapping rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Work
+  ].
+
+  ex:IdentifiedByMapping rr:predicateObjectMap [
+    rr:predicate bf:identifiedBy ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IdentifiedByBNodeMapping
+    ]
+  ].
+
+ex:IdentifiedByBNodeMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+  ex:IdentifiedByBNodeMapping rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Identifier
+  ].
+
+  ex:IdentifiedByBNodeMapping rr:predicateObjectMap [
+    rr:predicate rdf:value ;
+    rr:objectMap [
+      rr:reference "P10002"
+    ]
+  ].
+
+ex:NatureOfContentMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+  ex:NatureOfContentMapping rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Work
+  ].
+
+  ex:NatureOfContentMapping rr:predicateObjectMap [
+    rr:predicate bf:natureOfContent ;
+    rr:objectMap [
+      rml:reference "P10222"
+    ]
+  ].
+
+ex:AcademicDegreeMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+  ex:AcademicDegreeMapping rr:subjectMap [
+    rml:reference "@about" ;
+    rr:class bf:Work
+  ] .
+
+  ex:AcademicDegreeMapping rr:predicateObjectMap [
+    rr:predicate bf:dissertation ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:DissertationMapping
+    ]
+  ] .
+
+ex:DissertationMapping a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/expandedExampleData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description1"
+  ].
+
+ex:DissertationMapping rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Dissertation
+  ] .
+
+ex:DissertationMapping rr:predicateObjectMap [
+    rr:predicate bf:degree ;
+    rr:objectMap [
+      rr:reference "P10077"
+    ]
+  ] .
+
+ex:DissertationMapping rr:predicateObjectMap [
+    rr:predicate bf:grantingInstitution ;
+    rr:objectMap [
+      rr:reference "P10006/@resource"
+    ]
+  ] .
+
+ex:DissertationMapping rr:predicateObjectMap [
+    rr:predicate bf:date ;
+    rr:objectMap [
+      rr:reference "P10215"
+    ]
+  ] .
