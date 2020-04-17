@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm;
+  rdfs:label "Conference papers and proceedings" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  a bf:Work;
+  bf:dissertation _:3 .
+
+_:3 a bf:Dissertation .
+# Not sure how to get RML to not generate these classes if the rest of the triples map is empty for this property...
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:genreForm "http://id.loc.gov/authorities/genreForms/gf2014026068";
+  bf:identifiedBy _:2 .
+
+_:2 a bf:Identifier .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:originDate "2018";
+  bf:originPlace _:1 .
+
+_:1 a bf:Place .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:0 .
+
+_:0 a bf:Title;
+  bf:mainTitle "Beyond Einstein";
+  rdfs:label "Beyond Einstein" .
