@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RDF>
+<RDF
+  xmlns:ex="http://example.org/rules/">
   <Description1 about="https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b">
-    <P10223 lang="en">Beyond Einstein</P10223>
+    <ex:P10223 lang="en">Beyond Einstein</ex:P10223>
     <P10256>General relativity (Physics)--History--20th century--Congresses</P10256>
     <hasLcClassificationPartA lang="en">QC173.52</hasLcClassificationPartA>
     <P10256>Mathematics--History--20th century--Congresses</P10256>

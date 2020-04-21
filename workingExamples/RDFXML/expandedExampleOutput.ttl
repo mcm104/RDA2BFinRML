@@ -1,4 +1,5 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -10,23 +11,52 @@
   bf:dissertation _:3 .
 
 _:3 a bf:Dissertation .
-# Not sure how to get RML to not generate these classes if the rest of the triples map is empty for this property...
 
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
   bf:genreForm "http://id.loc.gov/authorities/genreForms/gf2014026068";
+  bf:identifiedBy _:1 .
+
+_:1 a bf:Identifier .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
   bf:identifiedBy _:2 .
 
-_:2 a bf:Identifier .
+_:2 a bf:Identifier;
+  bf:source _:7 .
+
+_:7 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:2 rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein" .
 
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
   bf:originDate "2018";
-  bf:originPlace _:1 .
+  bf:originPlace _:0 .
 
-_:1 a bf:Place .
+_:0 a bf:Place .
 
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
-  bf:title _:0 .
+  bf:title _:4 .
 
-_:0 a bf:Title;
+_:4 a bf:Title;
   bf:mainTitle "Beyond Einstein";
   rdfs:label "Beyond Einstein" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:5 .
+
+_:5 a bf:VariantTitle .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  madsrdf:authoritativeLabel _:6 .
+
+_:6 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Cosmology--History--20th century--Congresses", "General relativity (Physics)--History--20th century--Congresses",
+    "Mathematics--History--20th century--Congresses", "Physics--History--20th century--Congresses",
+    "Relativity (Physics)--History--20th century--Congresses" .
+
+_:8 a bf:Identifier;
+  bf:source _:9 .
+
+_:9 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
