@@ -15,47 +15,21 @@
 @prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 
-ex:TitleMap a rr:TriplesMap;
+ex:WorkMonographMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/JSON/titleExampleData.json";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/JSON/jsonSimpleData.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$"
+    rml:iterator "$.@graph"
   ].
 
-ex:TitleMap rr:subjectMap [
-  rml:reference "@work.@trellis";
+ex:WorkMonographMap rr:subjectMap [
+  rml:reference "wasAssociatedWith";
   rr:class bf:Work
 ].
 
-ex:TitleMap rr:predicateObjectMap [
-  rr:predicate bf:title;
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate madsrdf:authoritativeLabel ;
   rr:objectMap [
-    rr:parentTriplesMap ex:TitleBNodeMap
+    rml:reference "atTime"
   ]
 ].
-
-ex:TitleBNodeMap a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/JSON/titleExampleData.json";
-    rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$"
-  ].
-
-ex:TitleBNodeMap rr:subjectMap [
-    rr:termType rr:BlankNode;
-    rr:class bf:Title
-  ].
-
-ex:TitleBNodeMap rr:predicateObjectMap [
-  rr:predicate rdfs:label ;
-  rr:objectMap [
-    rml:reference "@work.@title"
-  ]
-] .
-
-ex:TitleBNodeMap rr:predicateObjectMap [
-  rr:predicate bf:mainTitle ;
-  rr:objectMap [
-    rml:reference "@work.@title"
-  ]
-] .
