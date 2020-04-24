@@ -15,14 +15,14 @@
 
 ex:TitleMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/titleExampleData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/individualProperties/hasPreferredTitleOfWork/titleExampleData.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description"
   ].
 
 ex:TitleMap rr:subjectMap [
   rml:reference "@about";
-  rr:class bf:Title
+  rr:class bf:Work
 ].
 
 ex:TitleMap rr:predicateObjectMap [
@@ -34,7 +34,7 @@ ex:TitleMap rr:predicateObjectMap [
 
 ex:TitleBNodeMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/titleExampleData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/individualProperties/hasPreferredTitleOfWork/titleExampleData.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description"
   ].

@@ -1,0 +1,139 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm;
+  rdfs:label "Conference papers and proceedings" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  a bf:Work;
+  bf:contribution _:0 .
+
+_:0 a bf:Contribution;
+  bf:agent _:10 .
+
+_:10 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/com" .
+
+_:0 bf:agent _:11 .
+
+_:11 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/fmp" .
+
+_:0 bf:agent _:12 .
+
+_:12 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/tlp" .
+
+_:0 bf:agent _:13 .
+
+_:13 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/cng" .
+
+_:0 bf:agent _:14 .
+
+_:14 a bf:Organization;
+  bf:role "http://id.loc.gov/vocabulary/relators/prn" .
+
+_:0 bf:agent _:18 .
+
+_:18 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/aut";
+  rdfs:label "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany)" .
+
+_:0 bf:agent _:19 .
+
+_:19 a bf:Agent;
+  bf:agent "http://id.loc.gov/authorities/names/n79053201";
+  bf:role "http://id.loc.gov/vocabulary/relators/art";
+  rdfs:label "" .
+
+_:0 bf:agent _:20 .
+
+_:20 a bf:Agent;
+  bf:agent "http://id.loc.gov/authorities/names/n79145593";
+  bf:role "http://id.loc.gov/vocabulary/relators/aus";
+  rdfs:label "" .
+
+_:0 bf:agent _:21 .
+
+_:21 a bf:Agent;
+  bf:agent "http://id.loc.gov/authorities/names/n79148103";
+  bf:role "http://id.loc.gov/vocabulary/relators/fmd";
+  rdfs:label "" .
+
+_:0 bf:agent _:22 .
+
+_:22 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/ctg" .
+
+_:0 bf:agent _:9 .
+
+_:9 a bf:Agent;
+  bf:role "http://id.loc.gov/vocabulary/relators/tld" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:dissertation _:5 .
+
+_:5 a bf:Dissertation .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:genreForm "http://id.loc.gov/authorities/genreForms/gf2014026068";
+  bf:hasPart _:2 .
+
+_:2 a bf:Work .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:identifiedBy _:3 .
+
+_:3 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/174446829" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:identifiedBy _:4 .
+
+_:4 a bf:Identifier;
+  bf:source _:15 .
+
+_:15 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:4 rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:originDate "2018";
+  bf:originPlace _:1 .
+
+_:1 a bf:Place;
+  bf:source "http://id.loc.gov/authorities/names/n78095330";
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:6 .
+
+_:6 a bf:Title;
+  bf:mainTitle "Beyond Einstein";
+  rdfs:label "Beyond Einstein" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:7 .
+
+_:7 a bf:VariantTitle;
+  bf:mainTitle "Идиот" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  madsrdf:authoritativeLabel _:8 .
+
+_:8 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Cosmology--History--20th century--Congresses", "General relativity (Physics)--History--20th century--Congresses",
+    "Mathematics--History--20th century--Congresses", "Physics--History--20th century--Congresses",
+    "Relativity (Physics)--History--20th century--Congresses" .
+
+_:16 a bf:Identifier;
+  bf:source _:17 .
+
+_:17 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:16 rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories" .
