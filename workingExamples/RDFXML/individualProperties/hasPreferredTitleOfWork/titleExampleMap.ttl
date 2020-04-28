@@ -17,11 +17,11 @@ ex:TitleMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/individualProperties/hasPreferredTitleOfWork/titleExampleData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
   ].
 
 ex:TitleMap rr:subjectMap [
-  rml:reference "@about";
+  rml:reference "@*[name()='rdf:about']";
   rr:class bf:Work
 ].
 
@@ -36,7 +36,7 @@ ex:TitleBNodeMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/individualProperties/hasPreferredTitleOfWork/titleExampleData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
   ].
 
 ex:TitleBNodeMap rr:subjectMap [
@@ -47,13 +47,13 @@ ex:TitleBNodeMap rr:subjectMap [
 ex:TitleBNodeMap rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [
-    rml:reference "P10223"
+    rml:reference "*[name()='ns2:P10223']"
   ]
 ].
 
 ex:TitleBNodeMap rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
-    rml:reference "P10223"
+    rml:reference "*[name()='ns2:P10223']"
   ]
 ].

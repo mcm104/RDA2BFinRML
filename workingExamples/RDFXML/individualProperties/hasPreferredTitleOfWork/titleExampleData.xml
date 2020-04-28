@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<RDF>
+<rdf:RDF
+   xmlns:ns1="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:ns2="http://rdaregistry.info/Elements/w/"
+   xmlns:ns3="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-  <Description about="https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b">
-    <P10223 lang="en">Beyond Einstein</P10223>
-  </Description>
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b">
+    <ns2:P10223 xml:lang="en">Beyond Einstein</ns2:P10223>
+  </rdf:Description>
 
-</RDF>
+</rdf:RDF>
