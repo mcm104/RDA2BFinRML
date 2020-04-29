@@ -153,6 +153,15 @@ ex:WorkMonographMap a rr:TriplesMap;
     ]
   ].
 
+#intended audience
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:intendedAudience ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IntendedAudienceBNodeMap
+    ]
+  ].
+
 #authorized access point for work
 
   ex:WorkMonographMap rr:predicateObjectMap [
@@ -392,7 +401,7 @@ ex:AgentBNodeMap a rr:TriplesMap ;
       ex:ArtistBNodeMap rr:predicateObjectMap [
         rr:predicate bf:agent ;
         rr:objectMap [
-          rml:reference "*[name()='ns1:P10058']/@*[name()='resource']"
+          rml:reference "*[name()='ns1:P10058']/@*[name()='rdf:resource']"
         ]
       ].
 
@@ -425,7 +434,7 @@ ex:AgentBNodeMap a rr:TriplesMap ;
       ex:ScreenwriterBNodeMap rr:predicateObjectMap [
         rr:predicate bf:agent ;
         rr:objectMap [
-          rml:reference "*[name()='ns1:P10203']/@*[name()='resource']"
+          rml:reference "*[name()='ns1:P10203']/@*[name()='rdf:resource']"
         ]
       ].
 
@@ -458,7 +467,7 @@ ex:AgentBNodeMap a rr:TriplesMap ;
       ex:FilmDirectorBNodeMap rr:predicateObjectMap [
         rr:predicate bf:agent ;
         rr:objectMap [
-          rml:reference "*[name()='ns1:P10013']/@*[name()='resource']"
+          rml:reference "*[name()='ns1:P10013']/@*[name()='rdf:resource']"
         ]
       ].
 
@@ -722,7 +731,7 @@ ex:PlaceOfOriginBNodeMapping a rr:TriplesMap ;
   ex:PlaceOfOriginBNodeMapping rr:predicateObjectMap [
       rr:predicate bf:source ;
       rr:objectMap [
-        rml:reference "*[name()='ns1:P10218']/@*[name()='resource']"
+        rml:reference "*[name()='ns1:P10218']/@*[name()='rdf:resource']"
       ]
     ] .
 
@@ -845,7 +854,7 @@ ex:CoverageBNodeMap a rr:TriplesMap ;
     ex:CoverageBNodeMap rr:predicateObjectMap [
       rr:predicate bf:note ;
       rr:objectMap [
-        rml:reference "*[name()='ns1:P10216']/*[name()='rdf:resource']"
+        rml:reference "*[name()='ns1:P10216']/@*[name()='rdf:resource']"
       ]
     ].
 
@@ -863,24 +872,50 @@ ex:CoordinatesBNodeMap a rr:TriplesMap ;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
-  ex:CoordinatesBNodeMap rr:subjectMap [
-    rr:termType rr:BlankNode ;
-    rr:class bf:Cartographic
+    ex:CoordinatesBNodeMap rr:subjectMap [
+      rr:termType rr:BlankNode ;
+      rr:class bf:Cartographic
+    ].
+
+    ex:CoordinatesBNodeMap rr:predicateObjectMap [
+      rr:predicate rdfs:label ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10024']"
+      ]
+    ].
+
+    ex:CoordinatesBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:coordinates ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10024']/@*[name()='rdf:resource']"
+      ]
+    ].
+
+ex:IntendedAudienceBNodeMap a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
-  ex:CoordinatesBNodeMap rr:predicateObjectMap [
-    rr:predicate rdfs:label ;
-    rr:objectMap [
-      rml:reference "*[name()='ns1:P10024']"
-    ]
-  ].
+    ex:IntendedAudienceBNodeMap rr:subjectMap [
+      rr:termType rr:BlankNode ;
+      rr:class bf:IntendedAudience
+    ].
 
-  ex:CoordinatesBNodeMap rr:predicateObjectMap [
-    rr:predicate bf:coordinates ;
-    rr:objectMap [
-      rml:reference "*[name()='ns1:P10024']/*[name()='rdf:resource']"
-    ]
-  ].
+    ex:IntendedAudienceBNodeMap rr:predicateObjectMap [
+      rr:predicate rdfs:label ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10217']"
+      ]
+    ].
+
+    ex:IntendedAudienceBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:intendedAudience ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10217']/@*[name()='rdf:resource']"
+      ]
+    ].
 
 ex:AuthorizedAccessPointMapping a rr:TriplesMap;
   rml:logicalSource [

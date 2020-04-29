@@ -39,6 +39,8 @@
     <ns1:P10366 xml:lang="en">2367-4067</ns1:P10366>
     <ns1:P10065>Zeng, Macia Lei, 1956-</ns1:P10065>
     <ns1:P10024 rdf:resource="http://example.org/Coordinates">Coordinates of cartographic content</ns1:P10024>
+    <ns1:P10217 rdf:resource="http://example.org/Audience">Intended audience</ns1:P10217>
+    <ns1:P10209 xml:lang="en">Doctor of Philosophy University of Washington 2019</ns1:P10209>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
