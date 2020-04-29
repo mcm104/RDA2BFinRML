@@ -8,7 +8,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description1 rdf:about="https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a">
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a">
     <ns1:P10331 xml:lang="en">American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus</ns1:P10331>
     <ns1:P10332 xml:lang="ru">Достоевский, Федор, 1821-1881. Идиот</ns1:P10332>
     <ns1:P10223 xml:lang="en">Idiot</ns1:P10223>
@@ -38,11 +38,12 @@
     <ns2:P10210 xml:lang="en">\"A Pocket Full of Rye is a work of detective fiction by Agatha Christie and first published in the UK by the Collins Crime Club on 9 November 1953,[1] and in the US by Dodd, Mead &amp; co. the following year ... The book features her detective, Miss Marple\"--Wikipedia, January 28, 2020.</ns2:P10210>
     <ns1:P10366 xml:lang="en">2367-4067</ns1:P10366>
     <ns1:P10065>Zeng, Macia Lei, 1956-</ns1:P10065>
-  </rdf:Description1>
-  <rdf:Description2 rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
+    <ns1:P10024 rdf:resource="http://example.org/Coordinates">Coordinates of cartographic content</ns1:P10024>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
-  </rdf:Description2>
-  <rdf:Description3 rdf:nodeID="f4671bbbbb1844474b46dedab4183d2a3b1">
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4671bbbbb1844474b46dedab4183d2a3b1">
     <ns3:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
     <ns3:creationDate xml:lang="en">2019-11-19</ns3:creationDate>
@@ -51,21 +52,21 @@
     <ns3:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <ns3:status rdf:nodeID="f4671bbbbb1844474b46dedab4183d2a3b2"/>
     <ns3:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-  </rdf:Description3>
-  <rdf:Description4 rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WAU</rdfs:label>
-  </rdf:Description4>
-  <rdf:Description5 rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026068">
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026068">
     <rdfs:label>Conference papers and proceedings</rdfs:label>
-  </rdf:Description5>
-  <rdf:Description6 rdf:nodeID="f4671bbbbb1844474b46dedab4183d2a3b2">
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f4671bbbbb1844474b46dedab4183d2a3b2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
     <ns3:code xml:lang="en">n</ns3:code>
-  </rdf:Description6>
-  <rdf:Description7 rdf:about="https://id.loc.gov/vocabulary/languages/eng">
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>
-  </rdf:Description7>
-  <rdf:Description8 rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>
-  </rdf:Description8>
+  </rdf:Description>
 </rdf:RDF>

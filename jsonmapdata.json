@@ -1,0 +1,17 @@
+{
+  "@graph": [
+    {
+      "@id": "https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9",
+      "P10004": [
+        "http://id.loc.gov/authorities/genreForms/gf2015026020",
+        "http://id.loc.gov/authorities/genreForms/gf2014026339"
+      ]
+    }
+  ],
+  "@context": {
+    "P10004": {
+      "@id": "http://rdaregistry.info/Elements/w/P10004",
+      "@type": "@id"
+    }
+  }
+}

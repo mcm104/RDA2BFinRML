@@ -7,19 +7,19 @@
 @prefix ex: <http://example.org/rules/> .
 @prefix schema: <http://schema.org/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
 @prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
 @prefix ns4: <http://sinopia.io/vocabulary/> .
-@prefix ns5: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns5: <http://rdaregistry.info/Elements/w/datatype/> .
 @prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 
 ex:WorkMonographMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:WorkMonographMap rr:subjectMap [
@@ -99,12 +99,57 @@ ex:WorkMonographMap a rr:TriplesMap;
     ]
   ].
 
+#motion picture adaptation of work
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:derivativeOf ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:DerivativeOfBNodeMap
+    ]
+  ].
+
 #has identifier for work
 
   ex:WorkMonographMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy ;
     rr:objectMap [
       rr:parentTriplesMap ex:IdentifiedByBNodeMapping
+    ]
+  ].
+
+#key title
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:title ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:KeyTitleBNodeMap
+    ]
+  ].
+
+#natureOfContent
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:natureOfContent ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10222']"
+    ]
+  ].
+
+#coverage
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:title ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CoverageBNodeMap
+    ]
+  ].
+
+#coordinates of cartographic content
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:cartographicAttributes ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CoordinatesBNodeMap
     ]
   ].
 
@@ -139,9 +184,9 @@ ex:WorkMonographMap a rr:TriplesMap;
 
 ex:TitleBNodeMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:TitleBNodeMap rr:subjectMap [
@@ -172,9 +217,9 @@ ex:TitleBNodeMap a rr:TriplesMap;
 
 ex:VariantTitleMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:VariantTitleMap rr:subjectMap [
@@ -191,9 +236,9 @@ ex:VariantTitleMap a rr:TriplesMap;
 
 ex:SubjectBNodeMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:SubjectBNodeMap rr:subjectMap [
@@ -210,9 +255,9 @@ ex:SubjectBNodeMap a rr:TriplesMap;
 
 ex:AgentBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:AgentBNodeMap rr:subjectMap [
@@ -301,9 +346,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:AuthorBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:AuthorBNodeMap rr:subjectMap [
@@ -334,9 +379,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:ArtistBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:ArtistBNodeMap rr:subjectMap [
@@ -367,9 +412,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:ScreenwriterBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:ScreenwriterBNodeMap rr:subjectMap [
@@ -400,9 +445,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:FilmDirectorBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:FilmDirectorBNodeMap rr:subjectMap [
@@ -433,9 +478,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:CartographerBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:CartographerBNodeMap rr:subjectMap [
@@ -466,9 +511,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:TelevisionDirectorBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:TelevisionDirectorBNodeMap rr:subjectMap [
@@ -499,9 +544,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:CompilerBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:CompilerBNodeMap rr:subjectMap [
@@ -532,9 +577,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:FilmProducerBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:FilmProducerBNodeMap rr:subjectMap [
@@ -565,9 +610,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:TelevisionProducerBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:TelevisionProducerBNodeMap rr:subjectMap [
@@ -598,9 +643,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:DirectorPhotographyBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:DirectorPhotographyBNodeMap rr:subjectMap [
@@ -631,9 +676,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
     ex:ProductionCompanyBNodeMap a rr:TriplesMap ;
       rml:logicalSource [
-        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+        rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
       ].
 
       ex:ProductionCompanyBNodeMap rr:subjectMap [
@@ -664,9 +709,9 @@ ex:AgentBNodeMap a rr:TriplesMap ;
 
 ex:PlaceOfOriginBNodeMapping a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:PlaceOfOriginBNodeMapping rr:subjectMap [
@@ -690,9 +735,9 @@ ex:PlaceOfOriginBNodeMapping a rr:TriplesMap ;
 
 ex:PartWorkBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:PartWorkBNodeMap rr:subjectMap [
@@ -703,22 +748,48 @@ ex:PartWorkBNodeMap a rr:TriplesMap ;
   ex:PartWorkBNodeMap rr:predicateObjectMap [
     rr:predicate bf:hasPart ;
     rr:objectMap [
-      rml:reference "*[name()='ns1:P10147']/@*[name()='rdf:reference']"
+      rml:reference "*[name()='ns1:P10147']/@*[name()='rdf:resource']"
     ]
   ].
 
-  ex:IdentifiedByBNodeMapping rr:predicateObjectMap [
+  ex:ParkWorkBNodeMapping rr:predicateObjectMap [
     rr:predicate rdfs:label ;
     rr:objectMap [
       rml:reference "*[name()='ns1:P10147']"
     ]
   ].
 
+ex:DerivativeOfBNodeMap a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  ].
+
+  ex:DerivativeOfBNodeMap rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Work
+  ].
+
+  ex:DerivativeOfBNodeMap rr:predicateObjectMap [
+    rr:predicate bf:derivateOf ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10129']/@*[name()='rdf:resource']"
+    ]
+  ].
+
+  ex:DerivativeOfBNodeMap rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10129']"
+    ]
+  ].
+
 ex:IdentifiedByBNodeMapping a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:IdentifiedByBNodeMapping rr:subjectMap [
@@ -733,11 +804,89 @@ ex:IdentifiedByBNodeMapping a rr:TriplesMap ;
     ]
   ].
 
+ex:KeyTitleBNodeMap a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  ].
+
+    ex:KeyTitleBNodeMap rr:subjectMap [
+      rr:termType rr:BlankNode ;
+      rr:class bf:KeyTitle
+    ].
+
+    ex:KeyTitleBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:mainTitle ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10367']"
+      ]
+    ].
+
+ex:CoverageBNodeMap a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  ].
+
+    ex:CoverageBNodeMap rr:subjectMap [
+      rr:termType rr:BlankNode ;
+      rr:class bf:Note
+    ].
+
+    ex:CoverageBNodeMap rr:predicateObjectMap [
+      rr:predicate rdfs:label ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10216']"
+      ]
+    ].
+
+    ex:CoverageBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:note ;
+      rr:objectMap [
+        rml:reference "*[name()='ns1:P10216']/*[name()='rdf:resource']"
+      ]
+    ].
+
+    ex:CoverageBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:noteType ;
+      rr:objectMap [
+        rr:constant "Coverage of the work"
+      ]
+    ].
+
+ex:CoordinatesBNodeMap a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  ].
+
+  ex:CoordinatesBNodeMap rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Cartographic
+  ].
+
+  ex:CoordinatesBNodeMap rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10024']"
+    ]
+  ].
+
+  ex:CoordinatesBNodeMap rr:predicateObjectMap [
+    rr:predicate bf:coordinates ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10024']/*[name()='rdf:resource']"
+    ]
+  ].
+
 ex:AuthorizedAccessPointMapping a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:AuthorizedAccessPointMapping rr:subjectMap [
@@ -761,9 +910,9 @@ ex:AuthorizedAccessPointMapping a rr:TriplesMap;
 
 ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:AuthorizedAccessPointBNodeMapping rr:subjectMap [
@@ -780,9 +929,9 @@ ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
 
 ex:VariantAccessPointMapping a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:VariantAccessPointMapping rr:subjectMap [
@@ -806,9 +955,9 @@ ex:VariantAccessPointMapping a rr:TriplesMap;
 
 ex:VariantAccessPointBNodeMapping a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:VariantAccessPointBNodeMapping rr:subjectMap [
@@ -825,9 +974,9 @@ ex:VariantAccessPointBNodeMapping a rr:TriplesMap;
 
 ex:DissertationMapping a rr:TriplesMap ;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description1']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
   ].
 
   ex:DissertationMapping rr:subjectMap [
@@ -860,9 +1009,9 @@ ex:DissertationMapping a rr:TriplesMap ;
 
 ex:CategoryOfWorkLabelMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/simplifiedRDFXMLData.xml";
+    rml:source "/home/mcm104/RDA2BFinRML/workingExamples/RDFXML/allCombined/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description5']"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][5]"
   ].
 
   ex:CategoryOfWorkLabelMap rr:subjectMap [
