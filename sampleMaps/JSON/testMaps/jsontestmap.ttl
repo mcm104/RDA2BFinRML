@@ -17,7 +17,7 @@
 
 ex:TestMap1 a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/RDA2BFinRML/jsonmapdata.json";
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/JSON/testData/jsontestdata.json";
     rml:referenceFormulation ql:JSONPath;
     rml:iterator "$.@graph[*]"
   ].
