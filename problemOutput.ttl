@@ -4,7 +4,7 @@
 
 <https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
   a bf:Work;
-  bf:title _:0 .
+  bf:note _:0 .
 
 _:0 a bf:Note;
   bf:note "http://id.loc.gov/authorities/names/n80001203";
