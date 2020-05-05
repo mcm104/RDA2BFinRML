@@ -28,7 +28,7 @@ ex:WorkMonographMap a rr:TriplesMap;
   ].
 
 ex:WorkMonographMap rr:predicateObjectMap [
-  rr:predicate bf:title ;
+  rr:predicate bf:note ;
   rr:objectMap [
     rr:parentTriplesMap ex:CoverageBNodeMap
   ]
