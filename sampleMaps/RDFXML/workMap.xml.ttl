@@ -171,12 +171,12 @@ ex:WorkMonographMap a rr:TriplesMap;
     ]
   ].
 
-#nature of content of work
+#variant access point for work
 
   ex:WorkMonographMap rr:predicateObjectMap [
-    rr:predicate bf:natureOfContent ;
+    rr:predicate bf:identifiedBy ;
     rr:objectMap [
-      rml:reference "*[name()='ns1:P10222']"
+      rr:parentTriplesMap ex:VariantAccessPointMapping
     ]
   ].
 
@@ -943,6 +943,13 @@ ex:AuthorizedAccessPointMapping a rr:TriplesMap;
     ]
   ].
 
+  ex:AuthorizedAccessPointMapping rr:predicateObjectMap [
+    rr:predicate bf:note ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AuthorizedAccessPointNoteMapping
+    ]
+  ].
+
 ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
@@ -959,6 +966,25 @@ ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
     rr:predicate rdfs:label ;
     rr:objectMap [
       rr:constant "RDA Authorized Access Point"
+    ]
+  ].
+
+ex:AuthorizedAccessPointNoteMapping a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  ].
+
+  ex:AuthorizedAccessPointNoteMapping rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Note
+  ].
+
+  ex:AuthorizedAccessPointNoteMapping rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rr:constant "This is an RDA Authorized Access Point"
     ]
   ].
 
