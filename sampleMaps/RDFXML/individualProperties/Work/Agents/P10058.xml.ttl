@@ -30,23 +30,23 @@ ex:WorkMonographMap a rr:TriplesMap;
   ex:WorkMonographMap rr:predicateObjectMap [
     rr:predicate bf:contribution ;
     rr:objectMap [
-      rr:parentTriplesMap ex:AgentBNodeMap
+      rr:parentTriplesMap ex:ArtistMap
     ]
   ].
 
-ex:AgentBNodeMap a rr:TriplesMap ;
+ex:ArtistMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
   ].
 
-  ex:AgentBNodeMap rr:subjectMap [
+  ex:ArtistMap rr:subjectMap [
     rr:termType rr:BlankNode ;
     rr:class bf:Contribution
   ] .
 
-  ex:AgentBNodeMap rr:predicateObjectMap [
+  ex:ArtistMap rr:predicateObjectMap [
     rr:predicate bf:agent ;
     rr:objectMap [
       rr:parentTriplesMap ex:ArtistBNodeMap
@@ -57,7 +57,7 @@ ex:ArtistBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10058]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
   ].
 
   ex:ArtistBNodeMap rr:subjectMap [

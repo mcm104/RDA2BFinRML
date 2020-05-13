@@ -1,79 +1,57 @@
 <https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work>.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:0.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:1.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/hasPart> _:2.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:3.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:4.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/contribution> _:0.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/originPlace> _:1.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/originDate> "1942".
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:2.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:3.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/hasPart> _:4.
 <https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:5.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:6.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:4.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:5.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:6.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> _:7.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:8.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:6.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/title> _:7.
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> _:8.
 <https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:9.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/contribution> _:10.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/contribution> _:11.
-<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/contribution> _:12.
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/VariantTitle>.
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
-_:1 <http://id.loc.gov/ontologies/bibframe/noteType> "Coverage of the work".
-_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work>.
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
-_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title>.
-_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title>.
-_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title>.
-_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Place>.
-_:14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
-_:14 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/fmd>.
-_:15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
-_:15 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/fmd>.
-_:16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
-_:16 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/fmd>.
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority>.
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
-_:8 <http://id.loc.gov/ontologies/bibframe/source> _:17.
-_:8 <http://id.loc.gov/ontologies/bibframe/source> _:18.
-_:8 <http://id.loc.gov/ontologies/bibframe/source> _:19.
-_:8 <http://id.loc.gov/ontologies/bibframe/note> _:20.
-_:8 <http://id.loc.gov/ontologies/bibframe/note> _:21.
-_:8 <http://id.loc.gov/ontologies/bibframe/note> _:22.
-_:17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:17 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Authorized Access Point".
-_:18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:18 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Authorized Access Point".
-_:19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:19 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Authorized Access Point".
-_:20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
-_:20 <http://www.w3.org/2000/01/rdf-schema#label> "This is an RDA Authorized Access Point".
-_:21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
-_:21 <http://www.w3.org/2000/01/rdf-schema#label> "This is an RDA Authorized Access Point".
-_:22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
-_:22 <http://www.w3.org/2000/01/rdf-schema#label> "This is an RDA Authorized Access Point".
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> <http://id.loc.gov/ontologies/bibframe/genreForm> <http://id.loc.gov/authorities/genreForms/gf2015026020>.
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution>.
+_:0 <http://id.loc.gov/ontologies/bibframe/agent> _:10.
+_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
+_:10 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/authorities/names/n79003304>.
+_:10 <http://www.w3.org/2000/01/rdf-schema#label> "".
+_:10 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/aut>.
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Place>.
+_:1 <http://id.loc.gov/ontologies/bibframe/source> <http://id.loc.gov/authorities/names/n78095330>.
+_:1 <http://www.w3.org/2000/01/rdf-schema#label> "".
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "http://viaf.org/viaf/174446829".
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/VariantTitle>.
+_:3 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Go down, Moses and other stories".
+_:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work>.
+_:4 <http://www.w3.org/2000/01/rdf-schema#label> "http://id.worldcat.org/fast/1367787".
+_:4 <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/authorities/names/n2010050909".
+_:4 <http://www.w3.org/2000/01/rdf-schema#label> "http://id.loc.gov/authorities/names/n80153668".
+_:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
+_:5 <http://www.w3.org/2000/01/rdf-schema#label> "".
+_:5 <http://id.loc.gov/ontologies/bibframe/note> <http://id.loc.gov/authorities/names/n79138969>.
+_:5 <http://id.loc.gov/ontologies/bibframe/noteType> "Coverage of the work".
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
+_:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Faulkner, William, 1897-1962. Go down, Moses and other stories".
+_:6 <http://id.loc.gov/ontologies/bibframe/source> _:11.
+_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
+_:11 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Variant Access Point".
+_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title>.
+_:7 <http://www.w3.org/2000/01/rdf-schema#label> "Go down, Moses".
+_:7 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Go down, Moses".
+_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority>.
+_:8 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mississippi--Race relations--Fiction".
+_:8 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "".
+_:8 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Yoknapatawpha County (Imaginary place)--Fiction".
+_:8 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Southern States--Race relations--Fiction".
+_:8 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mississippi--Social life and customs--Fiction".
+_:8 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> <http://id.loc.gov/authorities/subjects/sh2008111599>.
 _:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
-_:9 <http://id.loc.gov/ontologies/bibframe/source> _:23.
-_:9 <http://id.loc.gov/ontologies/bibframe/source> _:24.
-_:9 <http://id.loc.gov/ontologies/bibframe/source> _:25.
-_:23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:23 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Variant Access Point".
-_:24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:24 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Variant Access Point".
-_:25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:25 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Variant Access Point".
-_:10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution>.
-_:10 <http://id.loc.gov/ontologies/bibframe/agent> _:14.
-_:10 <http://id.loc.gov/ontologies/bibframe/agent> _:15.
-_:10 <http://id.loc.gov/ontologies/bibframe/agent> _:16.
-_:10 <http://id.loc.gov/ontologies/bibframe/agent> _:26.
-_:11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution>.
-_:11 <http://id.loc.gov/ontologies/bibframe/agent> _:14.
-_:11 <http://id.loc.gov/ontologies/bibframe/agent> _:15.
-_:11 <http://id.loc.gov/ontologies/bibframe/agent> _:16.
-_:11 <http://id.loc.gov/ontologies/bibframe/agent> _:26.
-_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution>.
-_:12 <http://id.loc.gov/ontologies/bibframe/agent> _:14.
-_:12 <http://id.loc.gov/ontologies/bibframe/agent> _:15.
-_:12 <http://id.loc.gov/ontologies/bibframe/agent> _:16.
-_:12 <http://id.loc.gov/ontologies/bibframe/agent> _:26.
-_:26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
-_:26 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/aut>.
+_:9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Faulkner, William, 1897-1962. Go down, Moses".
+_:9 <http://id.loc.gov/ontologies/bibframe/source> _:12.
+_:9 <http://id.loc.gov/ontologies/bibframe/note> _:13.
+_:12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
+_:12 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Authorized Access Point".
+_:13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
+_:13 <http://www.w3.org/2000/01/rdf-schema#label> "This is an RDA Authorized Access Point".

@@ -3,47 +3,46 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://id.loc.gov/authorities/genreForms/gf2014026068> a bf:GenreForm;
-  rdfs:label "Conference papers and proceedings" .
-
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
   a bf:Work;
-  bf:contribution _:3 .
+  bf:contribution _:0 .
 
-_:3 a bf:Contribution;
+_:0 a bf:Contribution;
   bf:agent _:4 .
 
 _:4 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
-
-_:3 bf:agent _:8 .
-
-_:8 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+  bf:role <http://id.loc.gov/vocabulary/relators/aut>;
+  rdfs:label "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany)" .
 
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
-  bf:identifiedBy _:2 .
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068>;
+  bf:identifiedBy _:3 .
 
-_:2 a bf:Identifier;
+_:3 a bf:Identifier;
   bf:note _:6 .
 
 _:6 a bf:Note;
   rdfs:label "This is an RDA Authorized Access Point" .
 
-_:2 bf:source _:5 .
+_:3 bf:source _:5 .
 
 _:5 a bf:Source;
   rdfs:label "RDA Authorized Access Point" .
 
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
-  bf:title _:0 .
-
-_:0 a bf:Title .
+_:3 rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein" .
 
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
-  madsrdf:authoritativeLabel _:1 .
+  bf:originDate "2018";
+  bf:title _:1 .
 
-_:1 a madsrdf:Authority .
+_:1 a bf:Title;
+  bf:mainTitle "Beyond Einstein";
+  rdfs:label "Beyond Einstein" .
 
-_:7 a bf:Source;
-  rdfs:label "RDA Variant Access Point" .
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  madsrdf:authoritativeLabel _:2 .
+
+_:2 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Cosmology--History--20th century--Congresses", "General relativity (Physics)--History--20th century--Congresses",
+    "Mathematics--History--20th century--Congresses", "Physics--History--20th century--Congresses",
+    "Relativity (Physics)--History--20th century--Congresses" .

@@ -1,26 +1,29 @@
 <https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work>.
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/title> _:0.
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/title> _:0.
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> _:1.
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:2.
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/contribution> _:3.
-<http://id.loc.gov/authorities/genreForms/gf2014026068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/GenreForm>.
-<http://id.loc.gov/authorities/genreForms/gf2014026068> <http://www.w3.org/2000/01/rdf-schema#label> "Conference papers and proceedings".
-_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title>.
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/contribution> _:0.
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/originDate> "2018".
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/title> _:1.
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> _:2.
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:3.
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> <http://id.loc.gov/ontologies/bibframe/genreForm> <http://id.loc.gov/authorities/genreForms/gf2014026068>.
+_:0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution>.
+_:0 <http://id.loc.gov/ontologies/bibframe/agent> _:4.
 _:4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
-_:4 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/fmd>.
-_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority>.
-_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
-_:2 <http://id.loc.gov/ontologies/bibframe/source> _:5.
-_:2 <http://id.loc.gov/ontologies/bibframe/note> _:6.
+_:4 <http://www.w3.org/2000/01/rdf-schema#label> "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany)".
+_:4 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/aut>.
+_:1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title>.
+_:1 <http://www.w3.org/2000/01/rdf-schema#label> "Beyond Einstein".
+_:1 <http://id.loc.gov/ontologies/bibframe/mainTitle> "Beyond Einstein".
+_:2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority>.
+_:2 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "General relativity (Physics)--History--20th century--Congresses".
+_:2 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mathematics--History--20th century--Congresses".
+_:2 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Cosmology--History--20th century--Congresses".
+_:2 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Physics--History--20th century--Congresses".
+_:2 <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Relativity (Physics)--History--20th century--Congresses".
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Identifier>.
+_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein".
+_:3 <http://id.loc.gov/ontologies/bibframe/source> _:5.
+_:3 <http://id.loc.gov/ontologies/bibframe/note> _:6.
 _:5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
 _:5 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Authorized Access Point".
 _:6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note>.
 _:6 <http://www.w3.org/2000/01/rdf-schema#label> "This is an RDA Authorized Access Point".
-_:7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Source>.
-_:7 <http://www.w3.org/2000/01/rdf-schema#label> "RDA Variant Access Point".
-_:3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution>.
-_:3 <http://id.loc.gov/ontologies/bibframe/agent> _:4.
-_:3 <http://id.loc.gov/ontologies/bibframe/agent> _:8.
-_:8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Agent>.
-_:8 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/aut>.

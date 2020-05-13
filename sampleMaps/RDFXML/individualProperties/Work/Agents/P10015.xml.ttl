@@ -30,23 +30,23 @@ ex:WorkMonographMap a rr:TriplesMap;
   ex:WorkMonographMap rr:predicateObjectMap [
     rr:predicate bf:contribution ;
     rr:objectMap [
-      rr:parentTriplesMap ex:AgentBNodeMap
+      rr:parentTriplesMap ex:TelevisionDirectorMap
     ]
   ].
 
-ex:AgentBNodeMap a rr:TriplesMap ;
+ex:TelevisionDirectorMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
   ].
 
-  ex:AgentBNodeMap rr:subjectMap [
+  ex:TelevisionDirectorMap rr:subjectMap [
     rr:termType rr:BlankNode ;
     rr:class bf:Contribution
   ] .
 
-  ex:AgentBNodeMap rr:predicateObjectMap [
+  ex:TelevisionDirectorMap rr:predicateObjectMap [
     rr:predicate bf:agent ;
     rr:objectMap [
       rr:parentTriplesMap ex:TelevisionDirectorBNodeMap
@@ -57,7 +57,7 @@ ex:TelevisionDirectorBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10015]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
   ].
 
   ex:TelevisionDirectorBNodeMap rr:subjectMap [

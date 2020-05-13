@@ -5,117 +5,74 @@
 
 <https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
   a bf:Work;
-  bf:contribution _:7 .
+  bf:contribution _:0 .
 
-_:7 a bf:Contribution;
-  bf:agent _:11 .
+_:0 a bf:Contribution;
+  bf:agent _:8 .
 
-_:11 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
-
-_:7 bf:agent _:12 .
-
-_:12 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
-
-_:7 bf:agent _:13 .
-
-_:13 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
-
-_:7 bf:agent _:23 .
-
-_:23 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/art> .
-
-_:7 bf:agent _:24 .
-
-_:24 a bf:Agent;
-  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+_:8 a bf:Agent;
+  bf:agent <http://id.loc.gov/authorities/names/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/art>;
+  rdfs:label "" .
 
 <https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:contribution _:8 .
+  bf:contribution _:1 .
 
-_:8 a bf:Contribution;
-  bf:agent _:11, _:12, _:13, _:23, _:24 .
+_:1 a bf:Contribution;
+  bf:agent _:9 .
 
-<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:contribution _:9 .
-
-_:9 a bf:Contribution;
-  bf:agent _:11, _:12, _:13, _:23, _:24 .
-
-<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:identifiedBy _:1 .
-
-_:1 a bf:Identifier .
+_:9 a bf:Agent;
+  bf:agent <http://id.loc.gov/authorities/names/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut>;
+  rdfs:label "" .
 
 <https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:identifiedBy _:6 .
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026327>, <http://id.loc.gov/authorities/genreForms/gf2016026096>;
+  bf:identifiedBy _:3 .
 
-_:6 a bf:Identifier;
-  bf:note _:17 .
+_:3 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/254992797" .
 
-_:17 a bf:Note;
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:identifiedBy _:7 .
+
+_:7 a bf:Identifier;
+  bf:note _:11 .
+
+_:11 a bf:Note;
   rdfs:label "This is an RDA Authorized Access Point" .
 
-_:6 bf:note _:18 .
+_:7 bf:source _:10 .
 
-_:18 a bf:Note;
-  rdfs:label "This is an RDA Authorized Access Point" .
-
-_:6 bf:note _:19 .
-
-_:19 a bf:Note;
-  rdfs:label "This is an RDA Authorized Access Point" .
-
-_:6 bf:source _:14 .
-
-_:14 a bf:Source;
+_:10 a bf:Source;
   rdfs:label "RDA Authorized Access Point" .
 
-_:6 bf:source _:15 .
-
-_:15 a bf:Source;
-  rdfs:label "RDA Authorized Access Point" .
-
-_:6 bf:source _:16 .
-
-_:16 a bf:Source;
-  rdfs:label "RDA Authorized Access Point" .
+_:7 rdf:value "Seuss, Dr. Lorax" .
 
 <https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:title _:0 .
+  bf:originDate "1971";
+  bf:originPlace _:2 .
 
-_:0 a bf:VariantTitle .
-
-<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:title _:2 .
-
-_:2 a bf:Title .
-
-<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  bf:title _:3 .
-
-_:3 a bf:Title .
+_:2 a bf:Place;
+  bf:source <http://id.loc.gov/authorities/names/n78095330>;
+  rdfs:label "" .
 
 <https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
   bf:title _:4 .
 
-_:4 a bf:Title .
+_:4 a bf:VariantTitle;
+  bf:mainTitle "Driad", "Loraks", "Lórax", "Lórax (Beber)" .
 
 <https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
-  madsrdf:authoritativeLabel _:5 .
+  bf:title _:5 .
 
-_:5 a madsrdf:Authority .
+_:5 a bf:Title;
+  bf:mainTitle "Lorax";
+  rdfs:label "Lorax" .
 
-_:10 a bf:Place .
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  madsrdf:authoritativeLabel _:6 .
 
-_:20 a bf:Source;
-  rdfs:label "RDA Variant Access Point" .
-
-_:21 a bf:Source;
-  rdfs:label "RDA Variant Access Point" .
-
-_:22 a bf:Source;
-  rdfs:label "RDA Variant Access Point" .
+_:6 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Ecology--Juvenile fiction", "Environmental ethics--Juvenile fiction",
+    "Environmentalism--Juvenile fiction", "Greed--Juvenile fiction", "Pollution--Juvenile fiction" .

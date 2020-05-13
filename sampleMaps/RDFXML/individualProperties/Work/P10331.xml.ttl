@@ -38,7 +38,7 @@ ex:AuthorizedAccessPointMapping a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10331]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
   ].
 
   ex:AuthorizedAccessPointMapping rr:subjectMap [
@@ -72,7 +72,7 @@ ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
   ].
 
   ex:AuthorizedAccessPointBNodeMapping rr:subjectMap [
@@ -92,7 +92,7 @@ ex:AuthorizedAccessPointNoteMapping a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
   ].
 
   ex:AuthorizedAccessPointNoteMapping rr:subjectMap [

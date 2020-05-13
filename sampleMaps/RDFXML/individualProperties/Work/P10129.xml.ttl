@@ -38,7 +38,7 @@ ex:DerivativeOfBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10129]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10129]"
   ].
 
   ex:DerivativeOfBNodeMap rr:subjectMap [

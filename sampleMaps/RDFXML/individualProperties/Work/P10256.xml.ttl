@@ -38,7 +38,7 @@ ex:SubjectBNodeMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10256]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
   ].
 
   ex:SubjectBNodeMap rr:subjectMap [
@@ -51,5 +51,13 @@ ex:SubjectBNodeMap a rr:TriplesMap;
     rr:objectMap [
       rml:reference "*[name()='ns1:P10256']";
       rr:termType rr:Literal
+    ]
+  ].
+
+  ex:SubjectBNodeMap rr:predicateObjectMap [
+    rr:predicate madsrdf:authoritativeLabel ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10256']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
     ]
   ].

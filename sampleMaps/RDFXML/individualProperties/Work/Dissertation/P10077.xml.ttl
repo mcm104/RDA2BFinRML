@@ -38,7 +38,7 @@ ex:DissertationMapping a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10077]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10077]"
   ].
 
   ex:DissertationMapping rr:subjectMap [
