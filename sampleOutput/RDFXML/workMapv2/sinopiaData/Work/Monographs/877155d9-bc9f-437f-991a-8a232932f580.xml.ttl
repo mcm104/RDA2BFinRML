@@ -1,0 +1,219 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <http://example.org/rules/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <http://schema.org/> .
+
+_:0 a bf:Title .
+
+_:1 a bf:Title .
+
+_:10 a bf:Contribution;
+  bf:agent _:15 .
+
+_:15 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:16 .
+
+_:16 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:17 .
+
+_:17 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:18 .
+
+_:18 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:19 .
+
+_:19 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:20 .
+
+_:20 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:21 .
+
+_:21 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:11 a bf:Contribution;
+  bf:agent _:15, _:16, _:17, _:18, _:19, _:20, _:21 .
+
+_:12 a bf:Contribution;
+  bf:agent _:15, _:16, _:17, _:18, _:19, _:20, _:21 .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:contribution _:10, _:11,
+    _:12, _:13 .
+
+_:13 a bf:Contribution;
+  bf:agent _:15, _:16, _:17, _:18, _:19, _:20, _:21 .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> a bf:Work;
+  bf:contribution _:14 .
+
+_:14 a bf:Contribution;
+  bf:agent _:15, _:16, _:17, _:18, _:19, _:20, _:21 .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:contribution _:8 .
+
+_:8 a bf:Contribution;
+  bf:agent _:15, _:16, _:17, _:18, _:19, _:20, _:21 .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:contribution _:9 .
+
+_:9 a bf:Contribution;
+  bf:agent _:15, _:16, _:17, _:18, _:19, _:20, _:21 .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:identifiedBy _:7 .
+
+_:7 a bf:Identifier;
+  bf:note _:29 .
+
+_:29 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:note _:30 .
+
+_:30 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:note _:31 .
+
+_:31 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:note _:32 .
+
+_:32 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:note _:33 .
+
+_:33 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:note _:34 .
+
+_:34 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:note _:35 .
+
+_:35 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:7 bf:source _:22 .
+
+_:22 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:7 bf:source _:23 .
+
+_:23 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:7 bf:source _:24 .
+
+_:24 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:7 bf:source _:25 .
+
+_:25 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:7 bf:source _:26 .
+
+_:26 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:7 bf:source _:27 .
+
+_:27 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:7 bf:source _:28 .
+
+_:28 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:title _:0, _:1, _:2 .
+
+_:2 a bf:Title .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:title _:3 .
+
+_:3 a bf:Title .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:title _:4 .
+
+_:4 a bf:Title .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:title _:5 .
+
+_:5 a bf:Title .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> bf:title _:6 .
+
+_:6 a bf:Title .
+
+<https://id.loc.gov/vocabulary/languages/eng> a bf:Work;
+  bf:contribution _:10, _:11, _:12, _:13, _:14, _:8, _:9;
+  bf:identifiedBy _:7;
+  bf:title _:0, _:1, _:2, _:3, _:4, _:5, _:6 .
+
+<https://id.loc.gov/vocabulary/menclvl/f> a bf:Work;
+  bf:contribution _:10, _:11, _:12, _:13, _:14, _:8, _:9;
+  bf:identifiedBy _:7;
+  bf:title _:0, _:1, _:2, _:3, _:4, _:5, _:6 .
+
+<https://id.loc.gov/vocabulary/organizations/wau> a bf:GenreForm, bf:Work;
+  bf:contribution _:10, _:11, _:12, _:13, _:14, _:8, _:9;
+  bf:identifiedBy _:7;
+  bf:title _:0, _:1, _:2, _:3, _:4, _:5, _:6;
+  rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/877155d9-bc9f-437f-991a-8a232932f580>
+  a bf:Work;
+  bf:contribution _:10, _:11, _:12, _:13, _:14, _:8, _:9;
+  bf:identifiedBy _:7;
+  bf:title _:0, _:1, _:2, _:3, _:4, _:5, _:6 .
+
+_:36 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:37 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:38 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:39 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:40 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:41 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:42 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .

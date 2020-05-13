@@ -19,7 +19,7 @@ ex:WorkMonographMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
   ].
 
 ex:WorkMonographMap rr:subjectMap [
@@ -38,7 +38,7 @@ ex:AgentBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
   ].
 
 ex:AgentBNodeMap rr:subjectMap [
@@ -57,7 +57,7 @@ ex:ProductionCompanyBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10008]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10008]"
   ].
 
 ex:ProductionCompanyBNodeMap rr:subjectMap [
@@ -100,7 +100,7 @@ ex:FilmDirectorBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
 ].
 
 ex:FilmDirectorBNodeMap rr:subjectMap [
@@ -143,7 +143,7 @@ ex:TelevisionDirectorBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10015]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
 ].
 
 ex:TelevisionDirectorBNodeMap rr:subjectMap [
@@ -186,7 +186,7 @@ ex:CartographerBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10052]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10052]"
 ].
 
 ex:CartographerBNodeMap rr:subjectMap [
@@ -229,7 +229,7 @@ ex:CompilerBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10055]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
 ].
 
 ex:CompilerBNodeMap rr:subjectMap [
@@ -272,7 +272,7 @@ ex:ArtistBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10058]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
 ].
 
 ex:ArtistBNodeMap rr:subjectMap [
@@ -315,7 +315,7 @@ ex:AuthorBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10061]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
 ].
 
 ex:AuthorBNodeMap rr:subjectMap [
@@ -358,7 +358,7 @@ ex:DirectorPhotographyBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10068]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10068]"
 ].
 
 ex:DirectorPhotographyBNodeMap rr:subjectMap [
@@ -401,7 +401,7 @@ ex:FilmProducerBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10073]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10073]"
 ].
 
 ex:FilmProducerBNodeMap rr:subjectMap [
@@ -444,7 +444,7 @@ ex:TelevisionProducerBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10075]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10075]"
 ].
 
 ex:TelevisionProducerBNodeMap rr:subjectMap [
@@ -487,7 +487,7 @@ ex:ScreenwriterBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10203]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
 ].
 
 ex:ScreenwriterBNodeMap rr:subjectMap [
@@ -530,7 +530,7 @@ ex:VariantTitleMap a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10086]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10086]"
 ].
 
 ex:VariantTitleMap rr:subjectMap [
@@ -557,7 +557,7 @@ ex:DerivativeOfBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10129]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10129]"
 ].
 
 ex:DerivativeOfBNodeMap rr:subjectMap [
@@ -592,7 +592,7 @@ ex:CoverageBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10216]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10216]"
 ].
 
   ex:CoverageBNodeMap rr:subjectMap [
@@ -635,7 +635,7 @@ ex:PartWorkBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10147]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10147]"
   ].
 
   ex:PartWorkBNodeMap rr:subjectMap [
@@ -669,7 +669,7 @@ ex:PartWorkBNodeMap a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10002]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10002]"
   ].
 
   ex:IdentifiedByBNodeMapping rr:subjectMap [
@@ -726,7 +726,7 @@ ex:TitleBNodeMap a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
 ].
 
 ex:TitleBNodeMap rr:subjectMap [
@@ -753,7 +753,7 @@ ex:CoordinatesBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10024]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10024]"
 ].
 
 ex:CoordinatesBNodeMap rr:subjectMap [
@@ -788,7 +788,7 @@ ex:IntendedAudienceBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10217]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10217]"
 ].
 
 ex:IntendedAudienceBNodeMap rr:subjectMap [
@@ -823,7 +823,7 @@ ex:KeyTitleBNodeMap a rr:TriplesMap ;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10367]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10367]"
 ].
 
 ex:KeyTitleBNodeMap rr:subjectMap [
@@ -843,7 +843,7 @@ ex:PlaceOfOriginBNodeMapping a rr:TriplesMap ;
   rml:logicalSource [
     rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10218]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10218]"
   ].
 
 ex:PlaceOfOriginBNodeMapping rr:subjectMap [
@@ -917,7 +917,7 @@ ex:SubjectBNodeMap a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10256]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
 ].
 
 ex:SubjectBNodeMap rr:subjectMap [
@@ -944,7 +944,7 @@ ex:AuthorizedAccessPointMapping a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10331]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
 ].
 
 ex:AuthorizedAccessPointMapping rr:subjectMap [
@@ -978,7 +978,7 @@ ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
 ].
 
 ex:AuthorizedAccessPointBNodeMapping rr:subjectMap [
@@ -998,7 +998,7 @@ ex:AuthorizedAccessPointNoteMapping a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
 ].
 
 ex:AuthorizedAccessPointNoteMapping rr:subjectMap [
@@ -1025,7 +1025,7 @@ ex:VariantAccessPointMapping a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10332]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10332]"
 ].
 
 ex:VariantAccessPointMapping rr:subjectMap [
@@ -1052,7 +1052,7 @@ ex:VariantAccessPointBNodeMapping a rr:TriplesMap;
 rml:logicalSource [
   rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
   rml:referenceFormulation ql:XPath;
-  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
 ].
 
 ex:VariantAccessPointBNodeMapping rr:subjectMap [

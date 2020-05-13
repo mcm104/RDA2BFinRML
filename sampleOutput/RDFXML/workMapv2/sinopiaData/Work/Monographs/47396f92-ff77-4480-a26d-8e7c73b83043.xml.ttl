@@ -1,0 +1,137 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  a bf:Work;
+  bf:contribution _:10 .
+
+_:10 a bf:Contribution;
+  bf:agent _:14 .
+
+_:14 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:15 .
+
+_:15 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:16 .
+
+_:16 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/fmd> .
+
+_:10 bf:agent _:26 .
+
+_:26 a bf:Agent;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:contribution _:11 .
+
+_:11 a bf:Contribution;
+  bf:agent _:14, _:15, _:16, _:26 .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:contribution _:12 .
+
+_:12 a bf:Contribution;
+  bf:agent _:14, _:15, _:16, _:26 .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:hasPart _:2 .
+
+_:2 a bf:Work .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:identifiedBy _:3 .
+
+_:3 a bf:Identifier .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:identifiedBy _:8 .
+
+_:8 a bf:Identifier;
+  bf:note _:20 .
+
+_:20 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:8 bf:note _:21 .
+
+_:21 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:8 bf:note _:22 .
+
+_:22 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point" .
+
+_:8 bf:source _:17 .
+
+_:17 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:8 bf:source _:18 .
+
+_:18 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+_:8 bf:source _:19 .
+
+_:19 a bf:Source;
+  rdfs:label "RDA Authorized Access Point" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:identifiedBy _:9 .
+
+_:9 a bf:Identifier;
+  bf:source _:23 .
+
+_:23 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:9 bf:source _:24 .
+
+_:24 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+_:9 bf:source _:25 .
+
+_:25 a bf:Source;
+  rdfs:label "RDA Variant Access Point" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:0 .
+
+_:0 a bf:VariantTitle .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:1 .
+
+_:1 a bf:Note;
+  bf:noteType "Coverage of the work" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:4 .
+
+_:4 a bf:Title .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:5 .
+
+_:5 a bf:Title .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:6 .
+
+_:6 a bf:Title .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  madsrdf:authoritativeLabel _:7 .
+
+_:7 a madsrdf:Authority .
+
+_:13 a bf:Place .
