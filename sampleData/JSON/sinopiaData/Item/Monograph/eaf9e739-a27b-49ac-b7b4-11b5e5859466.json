@@ -1,32 +1,32 @@
 {
   "@graph": [{
     "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b1",
     "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
     "catalogerID": {
-      "@language": "zxx",
-      "@value": "dbrookin"
+      "@language": "eng",
+      "@value": "jlee37"
     },
     "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
     "creationDate": {
-      "@language": "zxx",
-      "@value": "2020-03-17"
+      "@language": "eng",
+      "@value": "2020-02-21"
     },
     "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
     "source": "https://id.loc.gov/vocabulary/organizations/wau",
-    "status": "_:b2"
-  }, {
-    "@id": "_:b1",
-    "@type": ["as:Create", "prov:Activity"],
-    "atTime": "2020-03-17T18:48:24.775Z",
-    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+    "status": "_:b0"
   }, {
     "@id": "_:b2",
-    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
-    "code": {
-      "@language": "zxx",
-      "@value": "n"
-    }
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-22T01:29:27.668Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/7f10a20b-05f6-4586-a26e-430fde8deabe"
   }, {
     "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "label": "Resource Description and Access"
@@ -40,38 +40,48 @@
     "@id": "https://id.loc.gov/vocabulary/organizations/wau",
     "label": ["WAU", "WaU"]
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "label": "Кызытсе марий литератур"
+    "@id": "https://trellis.sinopia.io/repository/washington/37d584c2-5bc1-422b-bbbd-e1226c8e139e",
+    "label": "河里有鱼"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b",
+    "@id": "https://trellis.sinopia.io/repository/washington/eaf9e739-a27b-49ac-b7b4-11b5e5859466",
     "@type": "http://rdaregistry.info/Elements/c/C10003",
-    "adminMetadata": "_:b0",
-    "P40049": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
+    "adminMetadata": "_:b1",
+    "P40049": "https://trellis.sinopia.io/repository/washington/37d584c2-5bc1-422b-bbbd-e1226c8e139e",
     "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
-    "wasGeneratedBy": "_:b1",
+    "wasGeneratedBy": "_:b2",
     "hasBarcode": {
-      "@language": "zxx",
-      "@value": "453489572452704832750"
+      "@language": "eng",
+      "@value": "39352084239623"
     },
     "hasLcClassificationPartA": {
-      "@language": "zxx",
-      "@value": "PH821"
+      "@language": "eng",
+      "@value": "PL1115"
     },
     "hasLcClassificationPartB": {
-      "@language": "zxx",
-      "@value": ".K95 1994"
+      "@language": "eng",
+      "@value": ".L55892 2019"
     },
     "hasPhysicalLocation": {
-      "@language": "zxx",
-      "@value": "suzzallen"
+      "@language": "eng",
+      "@value": "eastasia"
     },
     "hasPhysicalSubLocation": {
-      "@language": "zxx",
-      "@value": "szstx"
+      "@language": "eng",
+      "@value": "ealc"
     },
     "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
   }],
   "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "P40049": {
+      "@id": "http://rdaregistry.info/Elements/i/P40049",
+      "@type": "@id"
+    },
     "hasPhysicalSubLocation": {
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
     },
@@ -79,35 +89,28 @@
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
       "@type": "@id"
     },
-    "adminMetadata": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-      "@type": "@id"
-    },
-    "wasGeneratedBy": {
-      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
-      "@type": "@id"
-    },
-    "hasPhysicalLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
-    },
-    "hasBarcode": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
-    },
-    "hasLcClassificationPartA": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
-    },
     "hasResourceTemplate": {
       "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
     },
     "hasLcClassificationPartB": {
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
     },
-    "P40049": {
-      "@id": "http://rdaregistry.info/Elements/i/P40049",
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
       "@type": "@id"
     },
-    "label": {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    "hasPhysicalLocation": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
+    },
+    "hasLcClassificationPartA": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "hasBarcode": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
     },
     "catalogerID": {
       "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
@@ -134,9 +137,6 @@
     },
     "creationDate": {
       "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
-    },
-    "code": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/code"
     },
     "atTime": {
       "@id": "http://www.w3.org/ns/prov#atTime",

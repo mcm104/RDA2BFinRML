@@ -1,32 +1,42 @@
 {
   "@graph": [{
     "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-07T21:38:07.353Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-07T21:47:48.019Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+  }, {
+    "@id": "_:b3",
     "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
     "catalogerID": {
-      "@language": "zxx",
+      "@language": "eng",
       "@value": "dbrookin"
     },
     "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
     "creationDate": {
-      "@language": "zxx",
-      "@value": "2020-03-17"
+      "@language": "eng",
+      "@value": "2020-02-07"
     },
     "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
     "source": "https://id.loc.gov/vocabulary/organizations/wau",
-    "status": "_:b2"
+    "status": "_:b0"
   }, {
-    "@id": "_:b1",
-    "@type": ["as:Create", "prov:Activity"],
-    "atTime": "2020-03-17T18:48:24.775Z",
+    "@id": "_:b4",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-07T21:58:23.847Z",
     "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
-  }, {
-    "@id": "_:b2",
-    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
-    "code": {
-      "@language": "zxx",
-      "@value": "n"
-    }
   }, {
     "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "label": "Resource Description and Access"
@@ -40,74 +50,62 @@
     "@id": "https://id.loc.gov/vocabulary/organizations/wau",
     "label": ["WAU", "WaU"]
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "label": "Кызытсе марий литератур"
+    "@id": "https://trellis.sinopia.io/repository/washington/5c7a09ac-9803-41b5-88e2-68d55160749d",
+    "label": "Словосполучення в сучасній українській літературній мові"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b",
+    "@id": "https://trellis.sinopia.io/repository/washington/b30d27da-5bc5-4fa3-9712-4777e0b58bad",
     "@type": "http://rdaregistry.info/Elements/c/C10003",
-    "adminMetadata": "_:b0",
-    "P40049": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
+    "adminMetadata": "_:b3",
+    "P40049": "https://trellis.sinopia.io/repository/washington/5c7a09ac-9803-41b5-88e2-68d55160749d",
     "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
-    "wasGeneratedBy": "_:b1",
-    "hasBarcode": {
-      "@language": "zxx",
-      "@value": "453489572452704832750"
-    },
-    "hasLcClassificationPartA": {
-      "@language": "zxx",
-      "@value": "PH821"
-    },
-    "hasLcClassificationPartB": {
-      "@language": "zxx",
-      "@value": ".K95 1994"
-    },
-    "hasPhysicalLocation": {
-      "@language": "zxx",
-      "@value": "suzzallen"
-    },
-    "hasPhysicalSubLocation": {
-      "@language": "zxx",
-      "@value": "szstx"
-    },
+    "wasGeneratedBy": ["_:b2", "_:b1", "_:b4"],
+    "hasBarcode": "4398703298705398787",
+    "hasLcClassificationPartA": "PG3871",
+    "hasLcClassificationPartB": ".U36 1968",
     "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
   }],
   "@context": {
-    "hasPhysicalSubLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "hasLcClassificationPartA": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
     },
     "heldBy": {
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
-      "@type": "@id"
-    },
-    "adminMetadata": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
       "@type": "@id"
     },
     "wasGeneratedBy": {
       "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
       "@type": "@id"
     },
-    "hasPhysicalLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
-    },
-    "hasBarcode": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
-    },
-    "hasLcClassificationPartA": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
-    },
-    "hasResourceTemplate": {
-      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
-    },
     "hasLcClassificationPartB": {
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
     },
     "P40049": {
       "@id": "http://rdaregistry.info/Elements/i/P40049",
       "@type": "@id"
     },
-    "label": {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "hasBarcode": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
     },
     "catalogerID": {
       "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
@@ -134,17 +132,6 @@
     },
     "creationDate": {
       "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
-    },
-    "code": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/code"
-    },
-    "atTime": {
-      "@id": "http://www.w3.org/ns/prov#atTime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "wasAssociatedWith": {
-      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
-      "@type": "@id"
     },
     "schema": "http://schema.org/",
     "owl": "http://www.w3.org/2002/07/owl#",

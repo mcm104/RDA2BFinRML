@@ -9,24 +9,39 @@
     "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
     "creationDate": {
       "@language": "zxx",
-      "@value": "2020-03-17"
+      "@value": "2020-03-24"
     },
     "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
     "source": "https://id.loc.gov/vocabulary/organizations/wau",
-    "status": "_:b2"
+    "status": "_:b1"
   }, {
     "@id": "_:b1",
-    "@type": ["as:Create", "prov:Activity"],
-    "atTime": "2020-03-17T18:48:24.775Z",
-    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
-  }, {
-    "@id": "_:b2",
     "@type": "http://id.loc.gov/ontologies/bibframe/Status",
     "code": {
       "@language": "zxx",
       "@value": "n"
     }
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-03-24T16:58:59.004Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+  }, {
+    "@id": "http://id.loc.gov/authorities/demographicTerms/dg2015060010",
+    "label": "Children"
+  }, {
+    "@id": "http://id.loc.gov/authorities/demographicTerms/dg2015060254",
+    "label": "Jews"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/languages/rus",
+    "label": "Russian"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/millus/ill",
+    "label": "Illustrations"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "label": "text"
   }, {
     "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "label": "Resource Description and Access"
@@ -38,74 +53,28 @@
     "label": "full"
   }, {
     "@id": "https://id.loc.gov/vocabulary/organizations/wau",
-    "label": ["WAU", "WaU"]
+    "label": "WAU"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "label": "Кызытсе марий литератур"
+    "@id": "https://trellis.sinopia.io/repository/washington/199fd36d-eb47-4a1a-849b-2de1549e24ea",
+    "label": "Nashimʺ di︠e︡ti︠a︡m"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b",
-    "@type": "http://rdaregistry.info/Elements/c/C10003",
+    "@id": "https://trellis.sinopia.io/repository/washington/bd941aa0-25fe-42f2-b8e5-fca14aece262",
+    "@type": "http://rdaregistry.info/Elements/c/C10006",
     "adminMetadata": "_:b0",
-    "P40049": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
-    "wasGeneratedBy": "_:b1",
-    "hasBarcode": {
-      "@language": "zxx",
-      "@value": "453489572452704832750"
+    "P20001": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "P20006": "http://id.loc.gov/vocabulary/languages/rus",
+    "P20051": "Maĭmon, Moiseĭ Lʹvovich, 1863-1924",
+    "P20065": {
+      "@language": "eng",
+      "@value": "Latin"
     },
-    "hasLcClassificationPartA": {
-      "@language": "zxx",
-      "@value": "PH821"
-    },
-    "hasLcClassificationPartB": {
-      "@language": "zxx",
-      "@value": ".K95 1994"
-    },
-    "hasPhysicalLocation": {
-      "@language": "zxx",
-      "@value": "suzzallen"
-    },
-    "hasPhysicalSubLocation": {
-      "@language": "zxx",
-      "@value": "szstx"
-    },
-    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+    "P20207": "http://id.loc.gov/vocabulary/millus/ill",
+    "P20231": "https://trellis.sinopia.io/repository/washington/199fd36d-eb47-4a1a-849b-2de1549e24ea",
+    "P20322": ["http://id.loc.gov/authorities/demographicTerms/dg2015060254", "http://id.loc.gov/authorities/demographicTerms/dg2015060010"],
+    "hasResourceTemplate": "WAU:RT:RDA:Expression:monograph",
+    "wasGeneratedBy": "_:b2"
   }],
   "@context": {
-    "hasPhysicalSubLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
-    },
-    "heldBy": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
-      "@type": "@id"
-    },
-    "adminMetadata": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-      "@type": "@id"
-    },
-    "wasGeneratedBy": {
-      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
-      "@type": "@id"
-    },
-    "hasPhysicalLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
-    },
-    "hasBarcode": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
-    },
-    "hasLcClassificationPartA": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
-    },
-    "hasResourceTemplate": {
-      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
-    },
-    "hasLcClassificationPartB": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
-    },
-    "P40049": {
-      "@id": "http://rdaregistry.info/Elements/i/P40049",
-      "@type": "@id"
-    },
     "label": {
       "@id": "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -134,6 +103,43 @@
     },
     "creationDate": {
       "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P20207": {
+      "@id": "http://rdaregistry.info/Elements/e/P20207",
+      "@type": "@id"
+    },
+    "P20322": {
+      "@id": "http://rdaregistry.info/Elements/e/P20322",
+      "@type": "@id"
+    },
+    "P20001": {
+      "@id": "http://rdaregistry.info/Elements/e/P20001",
+      "@type": "@id"
+    },
+    "P20051": {
+      "@id": "http://rdaregistry.info/Elements/e/P20051"
+    },
+    "P20006": {
+      "@id": "http://rdaregistry.info/Elements/e/P20006",
+      "@type": "@id"
+    },
+    "P20231": {
+      "@id": "http://rdaregistry.info/Elements/e/P20231",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P20065": {
+      "@id": "http://rdaregistry.info/Elements/e/P20065"
     },
     "code": {
       "@id": "http://id.loc.gov/ontologies/bibframe/code"

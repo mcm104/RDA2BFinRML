@@ -1,15 +1,34 @@
 {
   "@graph": [{
+    "@id": "https://trellis.sinopia.io/repository/washington/bc93a16f-a8ae-4856-9c2f-62c5b2591f55",
+    "@type": "http://rdaregistry.info/Elements/c/C10003",
+    "adminMetadata": "_:b0",
+    "P40049": "https://trellis.sinopia.io/repository/washington/22b554ca-6b46-4153-aebe-f573d5266de7",
+    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
+    "hasBarcode": {
+      "@language": "en",
+      "@value": "39352084182484"
+    },
+    "hasLcClassificationPartA": {
+      "@language": "en",
+      "@value": "TD419-428"
+    },
+    "hasPhysicalLocation": {
+      "@language": "en",
+      "@value": "Suzzallo and Allen Libraries"
+    },
+    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
     "@id": "_:b0",
     "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
     "catalogerID": {
-      "@language": "zxx",
-      "@value": "dbrookin"
+      "@language": "en",
+      "@value": "ries07"
     },
     "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
     "creationDate": {
-      "@language": "zxx",
-      "@value": "2020-03-17"
+      "@language": "en",
+      "@value": "2019-11-20"
     },
     "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
@@ -18,13 +37,13 @@
   }, {
     "@id": "_:b1",
     "@type": ["as:Create", "prov:Activity"],
-    "atTime": "2020-03-17T18:48:24.775Z",
-    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+    "atTime": "2019-11-20T20:43:25.024Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9ff64a8a-8d2b-45f5-b934-6aa7d355c5e4"
   }, {
     "@id": "_:b2",
     "@type": "http://id.loc.gov/ontologies/bibframe/Status",
     "code": {
-      "@language": "zxx",
+      "@language": "en",
       "@value": "n"
     }
   }, {
@@ -38,57 +57,25 @@
     "label": "full"
   }, {
     "@id": "https://id.loc.gov/vocabulary/organizations/wau",
-    "label": ["WAU", "WaU"]
+    "label": "WAU"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "label": "Кызытсе марий литератур"
+    "@id": "https://trellis.sinopia.io/repository/washington/22b554ca-6b46-4153-aebe-f573d5266de7",
+    "label": "Ground water development - issues and sustainable solutions"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b",
-    "@type": "http://rdaregistry.info/Elements/c/C10003",
-    "adminMetadata": "_:b0",
-    "P40049": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
-    "wasGeneratedBy": "_:b1",
-    "hasBarcode": {
-      "@language": "zxx",
-      "@value": "453489572452704832750"
-    },
-    "hasLcClassificationPartA": {
-      "@language": "zxx",
-      "@value": "PH821"
-    },
-    "hasLcClassificationPartB": {
-      "@language": "zxx",
-      "@value": ".K95 1994"
-    },
-    "hasPhysicalLocation": {
-      "@language": "zxx",
-      "@value": "suzzallen"
-    },
-    "hasPhysicalSubLocation": {
-      "@language": "zxx",
-      "@value": "szstx"
-    },
-    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+    "@id": "https://trellis.sinopia.io/repository/washington/bc93a16f-a8ae-4856-9c2f-62c5b2591f55",
+    "wasGeneratedBy": "_:b1"
   }],
   "@context": {
-    "hasPhysicalSubLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
-    },
-    "heldBy": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
-      "@type": "@id"
-    },
     "adminMetadata": {
       "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
       "@type": "@id"
     },
-    "wasGeneratedBy": {
-      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "P40049": {
+      "@id": "http://rdaregistry.info/Elements/i/P40049",
       "@type": "@id"
     },
-    "hasPhysicalLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
     },
     "hasBarcode": {
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
@@ -96,14 +83,19 @@
     "hasLcClassificationPartA": {
       "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
     },
-    "hasResourceTemplate": {
-      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    "hasPhysicalLocation": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
     },
-    "hasLcClassificationPartB": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    "heldBy": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+      "@type": "@id"
     },
-    "P40049": {
-      "@id": "http://rdaregistry.info/Elements/i/P40049",
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
       "@type": "@id"
     },
     "label": {
@@ -112,38 +104,34 @@
     "catalogerID": {
       "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
     },
-    "status": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/status",
-      "@type": "@id"
-    },
     "encodingLevel": {
       "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
       "@type": "@id"
     },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
     "descriptionConventions": {
       "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
-      "@type": "@id"
-    },
-    "source": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/source",
       "@type": "@id"
     },
     "descriptionLanguage": {
       "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
       "@type": "@id"
     },
-    "creationDate": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
     },
     "code": {
       "@id": "http://id.loc.gov/ontologies/bibframe/code"
     },
-    "atTime": {
-      "@id": "http://www.w3.org/ns/prov#atTime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "wasAssociatedWith": {
-      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
       "@type": "@id"
     },
     "schema": "http://schema.org/",

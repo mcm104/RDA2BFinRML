@@ -9,24 +9,29 @@
     "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
     "creationDate": {
       "@language": "zxx",
-      "@value": "2020-03-17"
+      "@value": "2020-03-13"
     },
     "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
     "source": "https://id.loc.gov/vocabulary/organizations/wau",
-    "status": "_:b2"
+    "status": "_:b1"
   }, {
     "@id": "_:b1",
-    "@type": ["as:Create", "prov:Activity"],
-    "atTime": "2020-03-17T18:48:24.775Z",
-    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
-  }, {
-    "@id": "_:b2",
     "@type": "http://id.loc.gov/ontologies/bibframe/Status",
     "code": {
       "@language": "zxx",
       "@value": "n"
     }
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-03-13T15:59:28.849Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+  }, {
+    "@id": "_:b3",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-03-13T16:02:24.576Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
   }, {
     "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "label": "Resource Description and Access"
@@ -38,77 +43,36 @@
     "label": "full"
   }, {
     "@id": "https://id.loc.gov/vocabulary/organizations/wau",
-    "label": ["WAU", "WaU"]
+    "label": "WAU"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "label": "Кызытсе марий литератур"
-  }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b",
-    "@type": "http://rdaregistry.info/Elements/c/C10003",
+    "@id": "https://trellis.sinopia.io/repository/washington/a3186ad1-a262-4206-a35d-9598b7f11d27",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
     "adminMetadata": "_:b0",
-    "P40049": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
-    "wasGeneratedBy": "_:b1",
-    "hasBarcode": {
-      "@language": "zxx",
-      "@value": "453489572452704832750"
+    "P10061": "Kopach, Oleksandra",
+    "P10086": [{
+      "@language": "ukr",
+      "@value": "Мовостиль Ольги Кобилянської"
+    }, {
+      "@language": "eng",
+      "@value": "Language and style of Ol'ha Kobylianska"
+    }],
+    "P10223": {
+      "@language": "ukr",
+      "@value": "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"
     },
-    "hasLcClassificationPartA": {
-      "@language": "zxx",
-      "@value": "PH821"
+    "P10256": "Kobyli︠a︡nsʹka, Olʹha, 1863-1942--Language.",
+    "P10331": {
+      "@language": "ukr",
+      "@value": "Kopach, Oleksandra. Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"
     },
-    "hasLcClassificationPartB": {
-      "@language": "zxx",
-      "@value": ".K95 1994"
+    "P10332": {
+      "@language": "ukr",
+      "@value": "Копач, Олександра.Мовостиль Ольги Кобилянської"
     },
-    "hasPhysicalLocation": {
-      "@language": "zxx",
-      "@value": "suzzallen"
-    },
-    "hasPhysicalSubLocation": {
-      "@language": "zxx",
-      "@value": "szstx"
-    },
-    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+    "hasResourceTemplate": "WAU:RT:RDA:Work:monograph",
+    "wasGeneratedBy": ["_:b2", "_:b3"]
   }],
   "@context": {
-    "hasPhysicalSubLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
-    },
-    "heldBy": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
-      "@type": "@id"
-    },
-    "adminMetadata": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
-      "@type": "@id"
-    },
-    "wasGeneratedBy": {
-      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
-      "@type": "@id"
-    },
-    "hasPhysicalLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
-    },
-    "hasBarcode": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
-    },
-    "hasLcClassificationPartA": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
-    },
-    "hasResourceTemplate": {
-      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
-    },
-    "hasLcClassificationPartB": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
-    },
-    "P40049": {
-      "@id": "http://rdaregistry.info/Elements/i/P40049",
-      "@type": "@id"
-    },
-    "label": {
-      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
-    },
     "catalogerID": {
       "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
     },
@@ -135,8 +99,37 @@
     "creationDate": {
       "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
     },
-    "code": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "P10332": {
+      "@id": "http://rdaregistry.info/Elements/w/P10332"
+    },
+    "P10086": {
+      "@id": "http://rdaregistry.info/Elements/w/P10086"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "P10256": {
+      "@id": "http://rdaregistry.info/Elements/w/P10256"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P10061": {
+      "@id": "http://rdaregistry.info/Elements/w/P10061"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
     },
     "atTime": {
       "@id": "http://www.w3.org/ns/prov#atTime",
@@ -145,6 +138,9 @@
     "wasAssociatedWith": {
       "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
       "@type": "@id"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
     },
     "schema": "http://schema.org/",
     "owl": "http://www.w3.org/2002/07/owl#",

@@ -14,19 +14,33 @@
     "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
     "source": "https://id.loc.gov/vocabulary/organizations/wau",
-    "status": "_:b2"
+    "status": "_:b3"
   }, {
     "@id": "_:b1",
-    "@type": ["as:Create", "prov:Activity"],
-    "atTime": "2020-03-17T18:48:24.775Z",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-03-17T18:44:39.073Z",
     "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
   }, {
     "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-03-17T18:27:33.456Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/85df7037-d85a-4ce2-9214-6bfea0f58e79"
+  }, {
+    "@id": "_:b3",
     "@type": "http://id.loc.gov/ontologies/bibframe/Status",
     "code": {
       "@language": "zxx",
       "@value": "n"
     }
+  }, {
+    "@id": "http://id.loc.gov/rwo/agents/no97025160",
+    "label": "Kudri︠a︡vt︠s︡eva, R. A. (Raisii︠a︡ Alekseevna)"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/languages/chm",
+    "label": "Mari"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "label": "text"
   }, {
     "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
     "label": "Resource Description and Access"
@@ -38,83 +52,64 @@
     "label": "full"
   }, {
     "@id": "https://id.loc.gov/vocabulary/organizations/wau",
-    "label": ["WAU", "WaU"]
+    "label": "WAU"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "label": "Кызытсе марий литератур"
+    "@id": "https://trellis.sinopia.io/repository/washington/1f90db66-a3f9-49bf-aaa0-ec3675df4027",
+    "label": "Kyzytse mariĭ literatur"
   }, {
-    "@id": "https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b",
-    "@type": "http://rdaregistry.info/Elements/c/C10003",
+    "@id": "https://trellis.sinopia.io/repository/washington/d0e83555-868c-4d03-99dc-8ac323bc2c2f",
+    "@type": "http://rdaregistry.info/Elements/c/C10006",
     "adminMetadata": "_:b0",
-    "P40049": "https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4",
-    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
-    "wasGeneratedBy": "_:b1",
-    "hasBarcode": {
-      "@language": "zxx",
-      "@value": "453489572452704832750"
+    "P20001": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "P20006": "http://id.loc.gov/vocabulary/languages/chm",
+    "P20065": {
+      "@language": "eng",
+      "@value": "Cyrillic"
     },
-    "hasLcClassificationPartA": {
-      "@language": "zxx",
-      "@value": "PH821"
-    },
-    "hasLcClassificationPartB": {
-      "@language": "zxx",
-      "@value": ".K95 1994"
-    },
-    "hasPhysicalLocation": {
-      "@language": "zxx",
-      "@value": "suzzallen"
-    },
-    "hasPhysicalSubLocation": {
-      "@language": "zxx",
-      "@value": "szstx"
-    },
-    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+    "P20231": "https://trellis.sinopia.io/repository/washington/1f90db66-a3f9-49bf-aaa0-ec3675df4027",
+    "P20330": "http://id.loc.gov/rwo/agents/no97025160",
+    "hasResourceTemplate": "WAU:RT:RDA:Expression:monograph",
+    "wasGeneratedBy": ["_:b1", "_:b2"]
   }],
   "@context": {
-    "hasPhysicalSubLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
+    "P20065": {
+      "@id": "http://rdaregistry.info/Elements/e/P20065"
     },
-    "heldBy": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+    "P20231": {
+      "@id": "http://rdaregistry.info/Elements/e/P20231",
       "@type": "@id"
     },
     "adminMetadata": {
       "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
       "@type": "@id"
     },
-    "wasGeneratedBy": {
-      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "P20006": {
+      "@id": "http://rdaregistry.info/Elements/e/P20006",
       "@type": "@id"
-    },
-    "hasPhysicalLocation": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
-    },
-    "hasBarcode": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
-    },
-    "hasLcClassificationPartA": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
     },
     "hasResourceTemplate": {
       "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
     },
-    "hasLcClassificationPartB": {
-      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    "P20001": {
+      "@id": "http://rdaregistry.info/Elements/e/P20001",
+      "@type": "@id"
     },
-    "P40049": {
-      "@id": "http://rdaregistry.info/Elements/i/P40049",
+    "P20330": {
+      "@id": "http://rdaregistry.info/Elements/e/P20330",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
       "@type": "@id"
     },
     "label": {
       "@id": "http://www.w3.org/2000/01/rdf-schema#label"
     },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
     "catalogerID": {
       "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
-    },
-    "status": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/status",
-      "@type": "@id"
     },
     "encodingLevel": {
       "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
@@ -135,8 +130,9 @@
     "creationDate": {
       "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
     },
-    "code": {
-      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
     },
     "atTime": {
       "@id": "http://www.w3.org/ns/prov#atTime",
