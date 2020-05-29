@@ -9,11 +9,13 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a">
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
     <rdaw:P10331 xml:lang="en">American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus</rdaw:P10331>
     <rdaw:P10332 xml:lang="ru">Достоевский, Федор, 1821-1881. Идиот</rdaw:P10332>
     <rdaw:P10223 xml:lang="en">Idiot</rdaw:P10223>
     <rdaw:P10086 xml:lang="ru">Идиот</rdaw:P10086>
     <rdaw:P10256>Russia--History--19th century--Fiction</rdaw:P10256>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85077524"/>
     <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026020"/>
     <rdaw:P10061 rdf:resource="http://id.loc.gov/authorities/names/n79029930"/>
     <rdaw:P10219 xml:lang="en">2009</rdaw:P10219>
@@ -41,6 +43,11 @@
     <rdaw:P10024 rdf:resource="http://example.org/Coordinates">Coordinates of cartographic content</rdaw:P10024>
     <rdaw:P10217 rdf:resource="http://example.org/Audience">Intended audience</rdaw:P10217>
     <rdaw:P10209 xml:lang="en">Doctor of Philosophy University of Washington 2019</rdaw:P10209>
+    <uwx:hasCreatorCharacteristic>men</uwx:hasCreatorCharacteristic>
+    <uwx:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060188"/>
+    <rdaw:P10011 rdf:resource="http://example.org/RelatedTo"/>
+    <rdaw:P10311 rdf:resource="http://id.loc.gov/authorities/names/nr93020823"/>
+    <rdaw:P10311> Moskovskiĭ mezhdunarodnyĭ festivalʹ "Moda i stilʹ v fotografii"</rdaw:P10311>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
